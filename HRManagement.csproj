@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,7 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+    <PackageReference Include="MongoDB.Driver" Version="3.3.0" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.30.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\HR\" />
+    <Folder Include="Controllers\Manager\" />
+    <Folder Include="Controllers\Employee\" />
+    <Folder Include="Controllers\Finance\" />
+    <Folder Include="DTOs\Employee\" />
+    <Folder Include="DTOs\Finance\" />
+    <Folder Include="DTOs\HR\" />
+    <Folder Include="DTOs\Manager\" />
+    <Folder Include="Models\Employee\" />
+    <Folder Include="Models\Finance\" />
+    <Folder Include="Models\HR\" />
+    <Folder Include="Models\Manager\" />
+    <Folder Include="Services\HR\" />
+    <Folder Include="Services\Manager\" />
+    <Folder Include="Services\Employee\" />
+    <Folder Include="Services\Finance\" />
   </ItemGroup>
 
 </Project>
