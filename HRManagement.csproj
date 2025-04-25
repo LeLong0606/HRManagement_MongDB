@@ -14,19 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\HR\" />
     <Folder Include="Controllers\Manager\" />
     <Folder Include="Controllers\Employee\" />
     <Folder Include="Controllers\Finance\" />
-    <Folder Include="DTOs\Employee\" />
-    <Folder Include="DTOs\Finance\" />
-    <Folder Include="DTOs\HR\" />
-    <Folder Include="DTOs\Manager\" />
-    <Folder Include="Models\Employee\" />
-    <Folder Include="Models\Finance\" />
-    <Folder Include="Models\HR\" />
-    <Folder Include="Models\Manager\" />
-    <Folder Include="Services\HR\" />
+    <Folder Include="DTOs\" />
     <Folder Include="Services\Manager\" />
     <Folder Include="Services\Employee\" />
     <Folder Include="Services\Finance\" />

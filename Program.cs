@@ -1,4 +1,5 @@
 using HRManagement.Data;
+using HRManagement.Services.HR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<HRMSetting>(
     builder.Configuration.GetSection("HRManagementDatabase")
 );
+
+builder.Services.AddSingleton<HREmployeeService>();
+builder.Services.AddSingleton<HREAccountService>();
+builder.Services.AddSingleton<HRDepartmentService>();
+builder.Services.AddSingleton<HRSalaryService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
