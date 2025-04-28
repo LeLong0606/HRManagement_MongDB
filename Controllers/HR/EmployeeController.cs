@@ -7,10 +7,10 @@ namespace HRManagement.Controllers.HR
 {
     [Route("api/hr/employees")]
     [ApiController]
-    public class HREmployeeController : ControllerBase
+    public class EmployeeController : ControllerBase
     {
-        private readonly HREmployeeService _employeeService;
-        public HREmployeeController(HREmployeeService employeeService)
+        private readonly EmployeeService _employeeService;
+        public EmployeeController(EmployeeService employeeService)
         {
             _employeeService = employeeService;
         }

@@ -7,10 +7,10 @@ namespace HRManagement.Controllers.HR
 {
     [Route("api/hr/leaverecords")]
     [ApiController]
-    public class HRLeaveRecordController : ControllerBase
+    public class LeaveRecordController : ControllerBase
     {
-        private readonly HRLeaveRecordService _leaveRecordService;
-        public HRLeaveRecordController(HRLeaveRecordService leaveRecordService)
+        private readonly LeaveRecordService _leaveRecordService;
+        public LeaveRecordController(LeaveRecordService leaveRecordService)
         {
             _leaveRecordService = leaveRecordService;
         }

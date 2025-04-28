@@ -6,10 +6,10 @@ using MongoDB.Driver;
 
 namespace HRManagement.Services.HR
 {
-    public class HRContractService
+    public class ContractService
     {
         private readonly IMongoCollection<Contract> _contracts;
-        public HRContractService(IOptions<HRMSetting> settings)
+        public ContractService(IOptions<ApplicationMongoDB> settings)
         {
             var client = new MongoClient(settings.Value.ConnectionString);
             var database = client.GetDatabase(settings.Value.DatabaseName);

@@ -8,7 +8,7 @@ namespace HRManagement.Services.HR
     public class SalaryService
     {
         private readonly IMongoCollection<Salary> _salaries;
-        public SalaryService(IOptions<HRMSetting> settings)
+        public SalaryService(IOptions<ApplicationMongoDB> settings)
         {
             var client = new MongoClient(settings.Value.ConnectionString);
             var database = client.GetDatabase(settings.Value.DatabaseName);

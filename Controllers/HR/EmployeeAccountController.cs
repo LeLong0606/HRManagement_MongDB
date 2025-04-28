@@ -7,10 +7,10 @@ namespace HRManagement.Controllers.HR
 {
     [Route("api/hr/employeeAccounts")]
     [ApiController]
-    public class HREAccountController : ControllerBase
+    public class EmployeeAccountController : ControllerBase
     {
-        private readonly HREAccountService _employeeAccountService;
-        public HREAccountController(HREAccountService employeeAccountService)
+        private readonly EmployeeAccountService _employeeAccountService;
+        public EmployeeAccountController(EmployeeAccountService employeeAccountService)
         {
             _employeeAccountService = employeeAccountService;
         }

@@ -7,10 +7,10 @@ namespace HRManagement.Controllers.HR
 {
     [Route("api/hr/departments")]
     [ApiController]
-    public class HRDepartmentController : ControllerBase
+    public class DepartmentController : ControllerBase
     {
-        private readonly HRDepartmentService _departmentService;
-        public HRDepartmentController(HRDepartmentService departmentService)
+        private readonly DepartmentService _departmentService;
+        public DepartmentController(DepartmentService departmentService)
         {
             _departmentService = departmentService;
         }

@@ -5,10 +5,10 @@ using MongoDB.Driver;
 
 namespace HRManagement.Services.HR
 {
-    public class HREAccountService
+    public class EmployeeAccountService
     {
         private readonly IMongoCollection<EmployeeAccount> _employeeAccounts;
-        public HREAccountService(IOptions<HRMSetting> settings)
+        public EmployeeAccountService(IOptions<ApplicationMongoDB> settings)
         {
             var client = new MongoClient(settings.Value.ConnectionString);
             var database = client.GetDatabase(settings.Value.DatabaseName);

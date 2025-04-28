@@ -5,10 +5,10 @@ using MongoDB.Driver;
 
 namespace HRManagement.Services.HR
 {
-    public class HRLeaveRecordService
+    public class LeaveRecordService
     {
         private readonly IMongoCollection<LeaveRecord> _leaveRecords;
-        public HRLeaveRecordService(IOptions<HRMSetting> settings)
+        public LeaveRecordService(IOptions<ApplicationMongoDB> settings)
         {
             var client = new MongoClient(settings.Value.ConnectionString);
             var database = client.GetDatabase(settings.Value.DatabaseName);
