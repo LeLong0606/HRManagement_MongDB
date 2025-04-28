@@ -12,6 +12,8 @@ builder.Services.AddSingleton<HREmployeeService>();
 builder.Services.AddSingleton<HREAccountService>();
 builder.Services.AddSingleton<HRDepartmentService>();
 builder.Services.AddSingleton<HRSalaryService>();
+builder.Services.AddSingleton<ContractService>();
+builder.Services.AddSingleton<HRLeaveRecordService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
