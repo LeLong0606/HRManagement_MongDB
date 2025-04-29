@@ -1,4 +1,5 @@
 using HRManagement.Data;
+using HRManagement.Services;
 using HRManagement.Services.HR;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,15 +9,7 @@ builder.Services.Configure<ApplicationMongoDB>(
     builder.Configuration.GetSection("HRManagementDatabase")
 );
 
-builder.Services.AddSingleton<EmployeeService>();
-builder.Services.AddSingleton<EmployeeAccountService>();
-builder.Services.AddSingleton<DepartmentService>();
-builder.Services.AddSingleton<SalaryService>();
-builder.Services.AddSingleton<ContractService>();
-builder.Services.AddSingleton<LeaveRecordService>();
-builder.Services.AddSingleton<AttendanceService>();
-builder.Services.AddSingleton<PRService>();
-builder.Services.AddSingleton<ProjectService>();
+builder.Services.AddHRManagementServices();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
